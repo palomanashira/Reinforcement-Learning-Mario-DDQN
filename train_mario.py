@@ -117,7 +117,7 @@ for i in range(first_episode, n_episodes):
 
     #save model
     if (i+1) % n_save_iter == 0:
-        online_network.save_model('/users/k20111668/workspace/mario/Mario/trained_models/model_' + str(i+1) + '_' + str(eps))
+        online_network.save_model(out_dir+'/Mario/trained_models/model_' + str(i+1) + '_' + str(eps))
         print('model_' + str(i+1) + '_' + str(eps), 'saved')
 
 env.close()
